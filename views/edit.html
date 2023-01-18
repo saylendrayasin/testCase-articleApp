@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Edit Comment</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="admin-header">
+        <p class="admin-header-txt">List of Comments</p>
+        <button class="admin-header-btn" id="btn-logout">Logout</button>
+      </div>
+      <div class="edit-form-container">
+        <h2>Edit Comment</h2>
+        <form action="" class="edit-form-content">
+          <input
+            type="text"
+            placeholder="Name"
+            class="edit-form-input"
+            id="edit-form-input"
+          />
+          <textarea
+            name=""
+            id="edit-form-textarea"
+            cols="30"
+            rows="10"
+            class="edit-form-textarea"
+            placeholder="Comment"
+          ></textarea>
+          <button class="form-btn" id="edit-form-button">Update</button>
+        </form>
+      </div>
+    </div>
+    <script src="/src/js/edit.js"></script>
+  </body>
+</html>

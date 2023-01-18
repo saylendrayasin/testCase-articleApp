@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Admin Portal</title>
+  </head>
+  <body>
+    <div>
+      <div class="login-container">
+        <!-- make login page in middle -->
+        <div class="login-form-container">
+          <div class="logo-container">
+            <img src="src/assets/img/Logo.png" alt="Logo" class="logo-img" />
+            <h3 class="logo-txt">LOGO</h3>
+          </div>
+
+          <form
+            action=""
+            method="post"
+            class="login-form-content"
+            id="login-form"
+          >
+            <input
+              id="email"
+              type="email"
+              placeholder="Email"
+              class="login-form-input"
+              name="username"
+            />
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              class="login-form-input"
+              name="password"
+            />
+            <div class="login-msg-container" id="login-msg-container">
+              <label id="login-msg" class="error-msg"></label>
+            </div>
+            <button class="form-btn" type="submit" name="login" id="login">
+              Login
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="src/js/login.js"></script>
+  </body>
+</html>

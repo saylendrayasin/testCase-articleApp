@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Article</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo-container">
+        <img src="src/assets/img/Logo.png" alt="Logo" class="logo-img" />
+        <p class="logo-txt">LOGO</p>
+      </div>
+
+      <!-- Article -->
+      <div class="article-container">
+        <h2 class="article-title">
+          Full Stack Developer: A Jack of All Trades in the Tech Industry
+        </h2>
+        <h4 class="article-time">Sun, 8 Jan 2023</h4>
+        <p class="article-content">
+          A full stack developer is a skilled professional who has a strong
+          understanding of both front-end and back-end technologies. They are
+          responsible for designing, developing, and maintaining the full stack
+          of an application, from the user interface to the database. Full stack
+          developers have a diverse set of skills, including proficiency in
+          programming languages such as JavaScript, Python, and Ruby, as well as
+          knowledge of front-end technologies like HTML, CSS, and JavaScript
+          frameworks such as React or Angular. They also have experience with
+          back-end technologies such as Node.js, Express.js, and databases like
+          MySQL and MongoDB. One of the key advantages of being a full stack
+          developer is the ability to work on a wide range of projects. They can
+          work on both the client-side and server-side of an application, giving
+          them a broad understanding of the entire development process. This
+          allows them to work on projects of varying complexity and size, from
+          small startup projects to large enterprise applications.
+        </p>
+      </div>
+
+      <!-- Form to add comment -->
+      <div class="form-container">
+        <h2 class="form-title">Add Your Comment</h2>
+        <form method="post" class="form-content" id="form">
+          <input
+            required
+            type="text"
+            placeholder="Name"
+            class="form-input"
+            id="input-name"
+            name="name"
+          />
+          <textarea
+            required
+            name="comment"
+            id="input-comment"
+            cols="30"
+            rows="10"
+            placeholder="Comment"
+            class="form-txtarea"
+          ></textarea>
+          <div class="form-containerCaptcha" id="captcha">
+            <input
+              type="text"
+              placeholder="Captcha"
+              class="form-input"
+              id="captcha-input"
+            />
+            <p class="captcha-txt" id="captcha-text">
+              What is <span id="captcha1"> x </span> +
+              <span id="captcha2">y</span>?
+            </p>
+          </div>
+          <label id="captcha-msg" class="error-msg"></label>
+          <button class="form-btn" id="btn-add" type="submit">Submit</button>
+        </form>
+      </div>
+
+      <!-- Comments -->
+      <div class="comments-container" id="counts-container">
+        <h2 class="comments-title">Comments (2)</h2>
+        <div id="comments-container">
+          <div class="comments-content">
+            <div class="comment-header">
+              <h2 class="comment-name">Faisal</h2>
+              <h4 class="comment-time">8th Jan 2023</h4>
+            </div>
+            <p class="comment-txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptas, quod, quia, voluptates quae voluptatibus quibusdam
+              voluptatum quos quidem quas nesciunt. Quisquam, quae.
+            </p>
+          </div>
+          <div class="comments-content">
+            <div class="comment-header">
+              <h2 class="comment-name">Azwar</h2>
+              <h4 class="comment-time">8th Jan 2023</h4>
+            </div>
+            <p class="comment-txt">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+              voluptas, quod, quia, voluptates quae voluptatibus quibusdam
+              voluptatum quos quidem quas nesciunt. Quisquam, quae.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/js/index.js"></script>
+  </body>
+</html>
